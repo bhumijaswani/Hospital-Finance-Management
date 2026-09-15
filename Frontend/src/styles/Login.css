@@ -1,0 +1,17 @@
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #cfe2f3; /* light blue */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box {
+  background-color: #1e3a5f; /* dark blue */
+  padding: 2.5rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

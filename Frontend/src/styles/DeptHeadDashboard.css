@@ -1,0 +1,33 @@
+.dept-dashboard {
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.request-box {
+  background: #cfe2f3;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.expense-table th {
+  background: #1e3a5f;
+  color: white;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.expense-table td {
+  padding: 0.6rem;
+  border-bottom: 1px solid #eee;
+}
+
+.status-pending { color: #f9a825; font-weight: 600; }
+.status-approved { color: #2e7d32; font-weight: 600; }
+.status-rejected { color: #c62828; font-weight: 600; }

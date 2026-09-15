@@ -1,0 +1,62 @@
+.admin-dashboard {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  background: #f7fafc;
+  border-radius: 10px;
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.card-label {
+  font-size: 0.85rem;
+  color: #718096;
+  margin: 0;
+}
+
+.card-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin: 0.3rem 0 0;
+}
+
+.summary-card.revenue { border-left: 4px solid #2e7d32; }
+.summary-card.expense { border-left: 4px solid #c62828; }
+.summary-card.balance { border-left: 4px solid #1565c0; }
+.summary-card.pending { border-left: 4px solid #f9a825; }
+
+.section-heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #1e3a5f;
+}
+
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.expense-table th {
+  background: #1e3a5f;
+  color: white;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.expense-table td {
+  padding: 0.6rem;
+  border-bottom: 1px solid #eee;
+}

@@ -1,0 +1,24 @@
+.audit-logs-page {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.logs-table th {
+  background: #1e3a5f;
+  color: white;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.logs-table td {
+  padding: 0.6rem;
+  border-bottom: 1px solid #eee;
+}
