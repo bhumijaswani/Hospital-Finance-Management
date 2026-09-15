@@ -22,7 +22,6 @@ function Login() {
   useEffect(() => {
     setErrMsg('');
   }, [email, pass]);
-
   const handleSubmit = async (e) => {
   e.preventDefault();
   setErrMsg('');
@@ -30,10 +29,11 @@ function Login() {
     const response = await axios.post(
       '/api/auth/login',
       JSON.stringify({ email, password: pass }),
-      { headers: { 'Content-Type': 'application/json' }, withCredentials: true }
+      { headers: { 'Content-Type': 'application/json' } }
     );
 
-    const userData = response.data.user;
+    const { token, user: userData } = response.data;
+    localStorage.setItem('token', token);
     setAuth(userData);
 
     // Role based redirecting
