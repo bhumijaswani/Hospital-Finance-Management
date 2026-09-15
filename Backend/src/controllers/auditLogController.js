@@ -1,4 +1,4 @@
-import { getAllAuditLogs } from '../models/auditLogModel.js';
+import { getAllAuditLogs } from '../models/auditlogModel.js';
 
 export const fetchAuditLogs = async (req, res) => {
   try {
