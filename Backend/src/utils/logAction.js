@@ -1,4 +1,4 @@
-import { createAuditLog } from '../models/auditLogModel.js';
+import { createAuditLog } from '../models/auditlogModel.js';
 
 export const logAction = async (data) => {
   try {
