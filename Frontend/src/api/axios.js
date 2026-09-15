@@ -1,6 +1,6 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: 'http://localhost:3000',
+  baseURL: 'https://hospital-finance-management.onrender.com',
   withCredentials: true, // sabhi requests pe cookie automatically bhejega
 });
