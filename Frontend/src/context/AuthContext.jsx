@@ -9,10 +9,18 @@ export const AuthProvider = function (props) {
 
   useEffect(() => {
     const checkSession = async () => {
+      const token = localStorage.getItem('token');
+
+      if (!token) {
+        setLoading(false);
+        return;   // token hi nahi hai toh API call mat karo
+      }
+
       try {
         const res = await axios.get('/api/auth/me');
         setAuth(res.data.user);
       } catch (err) {
+        localStorage.removeItem('token');
         setAuth({});
       } finally {
         setLoading(false);
